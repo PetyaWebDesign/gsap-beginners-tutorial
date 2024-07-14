@@ -1,0 +1,64 @@
+// colors
+@blue: #8BA5F9;
+@purple: #D1C7FA;
+@pink: #FFCCB6;
+@green: #DCF98B;
+@white: #ffffff;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-image: url(img/cosmic-timetraveler-LhDWW8PhPoE-unsplash.jpg);
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: @white;;
+    .content-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        .logo {
+            font-size: 2rem;
+            color: @blue;
+        }
+        nav {
+            a {
+                padding: 20px;
+                text-decoration: none;
+                color: @blue;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    .title {
+        font-size: 200px;
+        color: @white;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+    }
+    .astronaut {
+        width: 0px;
+        position: absolute;
+        transform: rotate(-30deg);
+        opacity: 0;
+        z-index: 2;
+    }
+}
